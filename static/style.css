@@ -1,0 +1,135 @@
+#top{
+    width: 100vm;
+    height: 300px;
+    background-image: url("22383446_m.jpg");
+   
+  }
+  
+  #name{
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+  }
+  
+  h1{
+    color: black;
+    font-size: 50px;
+  }
+  
+  p{
+    color: black;
+    font-size: 30px;
+  }
+
+  img{
+    width: 120px;
+    height: 120px;
+  }
+
+  #emotion{
+    padding-left: 400px;
+  }
+
+  #feelingImage{
+    visibility: hidden;
+  }
+  
+  #app{
+    text-align: center;
+    animation: none;
+    height: 200px;
+  }
+  
+  .button{
+    display: inline-block;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    text-decoration: none;
+    background: brown;
+    color: #FFF;
+    border-radius: 3px;
+    margin: 5px;
+  }
+  
+  .button:hover{
+    animation: colorchange 0.5s linear;
+    animation-fill-mode:forwards;
+  }
+  
+  @keyframes colorchange{
+    0% {
+      background: brown;
+    }
+    100%{
+      background: rgb(255, 55, 55);
+    }
+  }
+  
+  .buttons{
+    display: flex;
+    justify-content: center;
+  }
+  
+  span{
+    font-size: 24px;
+  }
+  
+  #animation{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .decorations{
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    animation: drop_decoration 8s linear;
+  }
+  
+  .flower{
+    background-image: url("Flower_SSmall.png");
+  }
+  
+  .star{
+    background-image: url("star.png");
+  }
+  
+  .deadleaf{
+    background-image: url("deadleaf.png");
+  }
+  
+  @keyframes drop_decoration{
+    0% {
+      opacity: 0;
+      top: 0;
+      transform: rotate(0);
+    }
+  
+    10% {
+      opacity: 1;
+    }
+  
+    90% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+      top: 100vh;
+      transform: rotate(1080deg);
+    }
+  }
+
+#licence{
+  margin-top: 40px;
+}
+  
+  
+  
+  

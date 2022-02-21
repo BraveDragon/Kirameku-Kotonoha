@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf8">
+        <meta lang="jp">
+        <title>きらめく言の葉</title>
+        <link rel="stylesheet" type= "text/css" href="static/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div id="animation">
+          <div id="top">
+            <div id="name">
+              <h1>きらめく言の葉</h1>
+              <p>これで今日から君も詩人!</p>
+              <div id="emotion">
+                <img id="feelingImage">
+              </div>
+            </div>
+          </div>
+          <div id="app">
+          <input v-model="firstTop" placeholder="1行目の先頭の単語">
+            <br>
+            <input v-model="secondTop" placeholder="2行目の先頭の単語">
+            <br>
+            <div class="buttons">
+            <a v-on:click="createPoem" href="#" class="button">詩を生成</a>
+            <a v-on:click="copyOnClipboard" href="#" class="button">Twitterへの架け橋</a>
+            <a v-on:click="goToTwitter" href="#" class="button">Twitterへアクセス</a>
+          </div>
+            <br>
+            <span>生成した詩<br> {{ firstPoem }} <br> {{ secondPoem }} </span>
+          </div>
+          <div id="licence">
+            このアプリは以下の著作物を改変して利用しています。<br>
+            正岡子規の俳句（季節別）、松山市、<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0（外部サイト）</a>
+          </div>
+        </div>
+        
+        <script src="static/main.js" type="text/javascript"></script>
+
+    </body>
+</html>
