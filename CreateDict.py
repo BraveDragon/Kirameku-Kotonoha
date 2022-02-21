@@ -1,3 +1,5 @@
+#coding:"utf-8"
+#詩の生成に使用するモデルを作成するプログラム
 from janome.tokenizer import Tokenizer
 import numpy as np
 import pykakasi
