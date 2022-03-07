@@ -99,6 +99,10 @@
   .star{
     background-image: url("star.png");
   }
+
+  .rose{
+    background-image: url("rose.png");
+  }
   
   .deadleaf{
     background-image: url("deadleaf.png");

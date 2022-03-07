@@ -95,12 +95,12 @@ function setAnimation() {
     }
     else if(app.$data["feeling"] === 1) {
         clearInterval(IntervalHandler);
-        IntervalHandler = setInterval(animation.bind(this, "star",30, 50),500);
+        IntervalHandler = setInterval(animation.bind(this, "rose",30, 50),500);
         document.querySelector("body").style.backgroundColor = "#CEF9DC";
     }else if(app.$data["feeling"] === -1){
         clearInterval(IntervalHandler);
         IntervalHandler = setInterval(animation.bind(this, "deadleaf",30, 50),500);
-        document.querySelector("body").style.backgroundColor = "#FFEEFF";
+        document.querySelector("body").style.backgroundColor = "#DDDDDD";
     }
 }
 
