@@ -4,7 +4,7 @@ from flask_cors import CORS
 import CreatePoem
 import pickle
 import urllib.parse
-#import NPclassifier
+import NPclassifier
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
@@ -23,10 +23,10 @@ def getPoem():
     SecondPoem = CreatePoem.CreatePoem(urllib.parse.unquote(Req["secondTop"]),model)
     print("first : "+urllib.parse.unquote(Req["firstTop"]))
     print("second : "+urllib.parse.unquote(Req["secondTop"]))
-    #positiveFlag = NPclassifier.GetIsPositive(Req["firstTop"]+Req["secondTop"])
+    positiveFlag = NPclassifier.GetIsPositive(Req["firstTop"]+Req["secondTop"])
     return jsonify({"firstPoem":FirstPoem,
                     "secondPoem":SecondPoem,
-                    #"positiveFlag":positiveFlag
+                    "positiveFlag":positiveFlag
                     })
 
 if __name__ == "__main__":
