@@ -10,8 +10,6 @@ SNS投稿のマンネリ化問題に対応するために作成した、2行詩�
 
 また、Webアプリ本体上の任意の場所をクリックすると流れるBGMについては自分で作曲しました。
 
-さらに、Webブラウザからアクセスできるよう、AWSにアプリケーションをホストしました。[こちら](http://kirameku-kotonoha.link/)からアクセスしてください。
-
 ## 実行デモ
 
 ![Demo](https://github.com/BraveDragon/Kirameku-Kotonoha/blob/main/Demo.gif)
